@@ -1,5 +1,8 @@
 <?php
 $pageTitle = "The Rogue";
+$basePath = dirname($_SERVER['SCRIPT_NAME']);
+$basePath = $basePath === '.' ? '' : $basePath;
+$basePath = rtrim($basePath, '/') . '/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +10,7 @@ $pageTitle = "The Rogue";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="<?php echo $basePath; ?>index.css">
      <link rel="stylesheet" href="https://use.typekit.net/tns8rhh.css">
 </head>
 <body class="mainBodyRogue">
@@ -19,9 +22,9 @@ $pageTitle = "The Rogue";
                 <div class="reputationCounterRogue">Reputation(+0)</div>
             </div>
             <div class="scaleImgRogue">
-                <img src="img/Scale.png" alt="Scale Image" class="scaleImageRogue">
+                <img src="<?php echo $basePath; ?>img/Scale.png" alt="Scale Image" class="scaleImageRogue">
             </div>
-            <a href="index.php" class="startOverButton">Start Over</a>
+            <a href="<?php echo $basePath; ?>index.php" class="startOverButton">Start Over</a>
         </div>
         <div class="rogueCard">
             <div class="rogueCardContent">
@@ -30,7 +33,7 @@ $pageTitle = "The Rogue";
                     <p class="rogueCardDescription">A lantern-lit little stash behind a door that definitely isn't supposed to be there. Everything down here has a story nobody's telling. No judgment, no backstories — just good deals and questionable provenance.</p>
                 </div>
                 <div class="rogueCardImage">
-                    <img src="img/rogueImg.png" alt="Rogue Image" class="rogueImage">
+                    <img src="<?php echo $basePath; ?>img/rogueImg.png" alt="Rogue Image" class="rogueImage">
                 </div>
                 
             </div>
@@ -41,7 +44,7 @@ $pageTitle = "The Rogue";
                 <div class="visitorLeft">
                     <div class="visitorHeader">
                         <div class="visitorAvatar">
-                            <img src="img/oldBramblewick.png" alt="Visitor Avatar" class="visitorAvatarImage">
+                            <img src="<?php echo $basePath; ?>img/oldBramblewick.png" alt="Visitor Avatar" class="visitorAvatarImage">
                         </div>
                         <div>
                             <div class="visitorName">Old Bramblewick</div>
@@ -79,25 +82,25 @@ $pageTitle = "The Rogue";
             <div class="goodsCardRogue">
                 <div class="goodsCardTitle">Wolfbane Sprig</div>
                 <div class="goodsCardCountRogue">2</div>
-                <div class="wolfbaneSprigImg"><img src="img/wolfbaneSprig.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="wolfbaneSprigImg"><img src="<?php echo $basePath; ?>img/wolfbaneSprig.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
             <div class="goodsCardRogue">
                 <div class="goodsCardTitle">Iron Ingot</div>
                 <div class="goodsCardCountRogue">2</div>
-                <div class="ironIngotImg"><img src="img/ironIngot.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="ironIngotImg"><img src="<?php echo $basePath; ?>img/ironIngot.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
             <div class="goodsCardRogue">
                 <div class="goodsCardTitle">Harvest Bread</div>
                 <div class="goodsCardCountRogue">2</div>
-                <div class="harvestBreadImg"><img src="img/harvestBread.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="harvestBreadImg"><img src="<?php echo $basePath; ?>img/harvestBread.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
             <div class="goodsCardRogue">
                 <div class="goodsCardTitle">Lantern Oil</div>
                 <div class="goodsCardCountRogue">2</div>
-                <div class="lanternOilImg"><img src="img/lanternOil.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="lanternOilImg"><img src="<?php echo $basePath; ?>img/lanternOil.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
         </div>

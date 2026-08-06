@@ -1,10 +1,13 @@
 <?php
 $pageTitle = "Web Page";
+$basePath = dirname($_SERVER['SCRIPT_NAME']);
+$basePath = $basePath === '.' ? '' : $basePath;
+$basePath = rtrim($basePath, '/') . '/';
 
 $characters = [
     [
         'class' => 'contentWitch',
-        'link' => 'witch.php',
+        'link' => $basePath . 'witch.php',
         'title' => 'The Witch',
         'description' => 'Herbs, hexes, and a suspiciously good cup of tea.',
         'containerClass' => 'witchContainer',
@@ -13,7 +16,7 @@ $characters = [
     ],
     [
         'class' => 'contentBlacksmith',
-        'link' => 'blacksmith.php',
+        'link' => $basePath . 'blacksmith.php',
         'title' => 'The Blacksmith',
         'description' => 'Every hammer swing has two possible futures.',
         'containerClass' => 'blacksmithContainer',
@@ -22,7 +25,7 @@ $characters = [
     ],
     [
         'class' => 'contentAlchemist',
-        'link' => 'alchemist.php',
+        'link' => $basePath . 'alchemist.php',
         'title' => 'The Alchemist',
         'description' => 'One tiny measurement away from \'oops\'.',
         'containerClass' => 'alchemistContainer',
@@ -31,7 +34,7 @@ $characters = [
     ],
     [
         'class' => 'contentRogue',
-        'link' => 'rogue.php',
+        'link' => $basePath . 'rogue.php',
         'title' => 'The Rogue',
         'description' => 'Finders keepers, askers... also keepers, technically.',
         'containerClass' => 'rogueContainer',
@@ -46,7 +49,7 @@ $characters = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="<?php echo $basePath; ?>index.css">
     <link rel="stylesheet" href="https://use.typekit.net/tns8rhh.css">
 </head>
 <body class="mainBody">
@@ -65,6 +68,6 @@ $characters = [
                 </a>
             <?php endforeach; ?>
         </div>        <div class="tempEndButtonWrapper">
-            <a href="endScreen.php" class="tempEndButton">Go to Ending</a>
+            <a href="<?php echo $basePath; ?>endScreen.php" class="tempEndButton">Go to Ending</a>
         </div>    </div>
 </body>

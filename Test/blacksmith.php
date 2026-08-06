@@ -1,5 +1,8 @@
 <?php
 $pageTitle = "The Alchemist";
+$basePath = dirname($_SERVER['SCRIPT_NAME']);
+$basePath = $basePath === '.' ? '' : $basePath;
+$basePath = rtrim($basePath, '/') . '/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +10,7 @@ $pageTitle = "The Alchemist";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="<?php echo $basePath; ?>index.css">
      <link rel="stylesheet" href="https://use.typekit.net/tns8rhh.css">
 </head>
 <body class="mainBodyBlacksmith">
@@ -19,9 +22,9 @@ $pageTitle = "The Alchemist";
                 <div class="reputationCounterBlacksmith">Reputation(+0)</div>
             </div>
             <div class="scaleImgBlacksmith">
-                <img src="img/scaleBlacksmith.png" alt="Scale Image" class="scaleImageBlacksmith">
+                <img src="<?php echo $basePath; ?>img/scaleBlacksmith.png" alt="Scale Image" class="scaleImageBlacksmith">
             </div>
-            <a href="index.php" class="startOverButton">Start Over</a>
+            <a href="<?php echo $basePath; ?>index.php" class="startOverButton">Start Over</a>
         </div>
         <div class="blacksmithCard">
             <div class="blacksmithCardContent">
@@ -30,7 +33,7 @@ $pageTitle = "The Alchemist";
                     <p class="blacksmithCardDescription">Sparks drift up through the chimney gap like tiny fireflies who took a wrong turn. Someone's always waiting outside with a very specific request and an unconvincing excuse. What you shape is honest — what happens to it after isn't your problem. Probably.</p>
                 </div>
                 <div class="blacksmithCardImage">
-                    <img src="img/blacksmithImg.png" alt="Blacksmith Image" class="blacksmithImage">
+                    <img src="<?php echo $basePath; ?>img/blacksmithImg.png" alt="Blacksmith Image" class="blacksmithImage">
                 </div>
                 
             </div>
@@ -41,7 +44,7 @@ $pageTitle = "The Alchemist";
                 <div class="visitorLeft">
                     <div class="visitorHeader">
                         <div class="visitorAvatar">
-                            <img src="img/oldBramblewick.png" alt="Visitor Avatar" class="visitorAvatarImage">
+                            <img src="<?php echo $basePath; ?>img/oldBramblewick.png" alt="Visitor Avatar" class="visitorAvatarImage">
                         </div>
                         <div>
                             <div class="visitorName">Old Bramblewick</div>
@@ -79,25 +82,25 @@ $pageTitle = "The Alchemist";
             <div class="goodsCardBlacksmith">
                 <div class="goodsCardTitle">Wolfbane Sprig</div>
                 <div class="goodsCardCountBlacksmith">2</div>
-                <div class="wolfbaneSprigImg"><img src="img/wolfbaneSprig.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="wolfbaneSprigImg"><img src="<?php echo $basePath; ?>img/wolfbaneSprig.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
             <div class="goodsCardBlacksmith">
                 <div class="goodsCardTitle">Iron Ingot</div>
                 <div class="goodsCardCountBlacksmith">2</div>
-                <div class="ironIngotImg"><img src="img/ironIngot.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="ironIngotImg"><img src="<?php echo $basePath; ?>img/ironIngot.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
             <div class="goodsCardBlacksmith">
                 <div class="goodsCardTitle">Harvest Bread</div>
                 <div class="goodsCardCountBlacksmith">2</div>
-                <div class="harvestBreadImg"><img src="img/harvestBread.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="harvestBreadImg"><img src="<?php echo $basePath; ?>img/harvestBread.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
             <div class="goodsCardBlacksmith">
                 <div class="goodsCardTitle">Lantern Oil</div>
                 <div class="goodsCardCountBlacksmith">2</div>
-                <div class="lanternOilImg"><img src="img/lanternOil.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="lanternOilImg"><img src="<?php echo $basePath; ?>img/lanternOil.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
         </div>

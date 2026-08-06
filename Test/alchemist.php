@@ -1,5 +1,8 @@
 <?php
 $pageTitle = "The Alchemist";
+$basePath = dirname($_SERVER['SCRIPT_NAME']);
+$basePath = $basePath === '.' ? '' : $basePath;
+$basePath = rtrim($basePath, '/') . '/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +10,7 @@ $pageTitle = "The Alchemist";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="<?php echo $basePath; ?>index.css">
      <link rel="stylesheet" href="https://use.typekit.net/tns8rhh.css">
 </head>
 <body class="mainBodyAlchemist">
@@ -19,9 +22,9 @@ $pageTitle = "The Alchemist";
                 <div class="reputationCounterAlchemist">Reputation(+0)</div>
             </div>
             <div class="scaleImgAlchemist">
-                <img src="img/scaleAlchemist.png" alt="Scale Image" class="scaleImageAlchemist">
+                <img src="<?php echo $basePath; ?>img/scaleAlchemist.png" alt="Scale Image" class="scaleImageAlchemist">
             </div>
-            <a href="index.php" class="startOverButton">Start Over</a>
+            <a href="<?php echo $basePath; ?>index.php" class="startOverButton">Start Over</a>
         </div>
         <div class="alchemistCard">
             <div class="alchemistCardContent">
@@ -30,7 +33,7 @@ $pageTitle = "The Alchemist";
                     <p class="alchemistCardDescription">A pocket‑sized cottage with a mint‑green door that always looks like it’s smiling. Inside, pastel potions fizz softly on tiny shelves, each one glowing like it’s keeping a sweet little secret. A drowsy cat in a star‑speckled apron guards a teacup cauldron bubbling with sparkles. The whole place smells like honey, peppermint, and gentle magic.</p>
                 </div>
                 <div class="alchemistCardImage">
-                    <img src="img/alchemistImg.png" alt="Alchemist Image" class="alchemistImage">
+                    <img src="<?php echo $basePath; ?>img/alchemistImg.png" alt="Alchemist Image" class="alchemistImage">
                 </div>
                 
             </div>
@@ -41,7 +44,7 @@ $pageTitle = "The Alchemist";
                 <div class="visitorLeft">
                     <div class="visitorHeader">
                         <div class="visitorAvatar">
-                            <img src="img/oldBramblewick.png" alt="Visitor Avatar" class="visitorAvatarImage">
+                            <img src="<?php echo $basePath; ?>img/oldBramblewick.png" alt="Visitor Avatar" class="visitorAvatarImage">
                         </div>
                         <div>
                             <div class="visitorName">Old Bramblewick</div>
@@ -79,25 +82,25 @@ $pageTitle = "The Alchemist";
             <div class="goodsCardAlchemist">
                 <div class="goodsCardTitle">Wolfbane Sprig</div>
                 <div class="goodsCardCountAlchemist">2</div>
-                <div class="wolfbaneSprigImg"><img src="img/wolfbaneSprig.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="wolfbaneSprigImg"><img src="<?php echo $basePath; ?>img/wolfbaneSprig.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
             <div class="goodsCardAlchemist">
                 <div class="goodsCardTitle">Iron Ingot</div>
                 <div class="goodsCardCountAlchemist">2</div>
-                <div class="ironIngotImg"><img src="img/ironIngot.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="ironIngotImg"><img src="<?php echo $basePath; ?>img/ironIngot.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
             <div class="goodsCardAlchemist">
                 <div class="goodsCardTitle">Harvest Bread</div>
                 <div class="goodsCardCountAlchemist">2</div>
-                <div class="harvestBreadImg"><img src="img/harvestBread.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="harvestBreadImg"><img src="<?php echo $basePath; ?>img/harvestBread.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
             <div class="goodsCardAlchemist">
                 <div class="goodsCardTitle">Lantern Oil</div>
                 <div class="goodsCardCountAlchemist">2</div>
-                <div class="lanternOilImg"><img src="img/lanternOil.png" alt="Goods Image" class="goodsImage"></div>
+                <div class="lanternOilImg"><img src="<?php echo $basePath; ?>img/lanternOil.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
         </div>

@@ -1,5 +1,8 @@
 <?php
 $pageTitle = "End Screen";
+$basePath = dirname($_SERVER['SCRIPT_NAME']);
+$basePath = $basePath === '.' ? '' : $basePath;
+$basePath = rtrim($basePath, '/') . '/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +10,7 @@ $pageTitle = "End Screen";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="<?php echo $basePath; ?>index.css">
     <link rel="stylesheet" href="https://use.typekit.net/tns8rhh.css">
 </head>
 <body class="mainBodyEnd">
@@ -56,7 +59,7 @@ $pageTitle = "End Screen";
                 </div>
             </div>
 
-            <a href="index.php" class="endScreenButton">Choose again</a>
+            <a href="<?php echo $basePath; ?>index.php" class="endScreenButton">Choose again</a>
         </div>
     </div>
 </body>
