@@ -1,0 +1,1846 @@
+/* index.css */
+.mainBody {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fdf6eb 0%, #e0ceff 100%);
+}
+
+.title {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+  margin: 0px;
+}
+
+.subtitle {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: 0px;
+}
+
+.introduction {
+  margin-top: 118px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1127px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.tempEndButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.tempEndButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 3px solid #3a2c53;
+  background: #3a2c53;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 5px 5px 0 0 #946fd7;
+}
+
+.tempEndButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 7px 7px 0 0 #946fd7;
+}
+
+.contentWitch,
+.contentBlacksmith {
+  display: flex;
+  width: 543px;
+  max-width: 100%;
+  height: 207px;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  border: 3px solid #3a2c53;
+  box-sizing: border-box;
+}
+
+.contentAlchemist,
+.contentRogue,
+.contentWitch,
+.contentBlacksmith {
+  display: flex;
+  width: 543px;
+  max-width: 100%;
+  height: 207px;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  border: 3px solid #3a2c53;
+  box-sizing: border-box;
+}
+
+.contentWitch {
+  background: #ffffff;
+  box-shadow: 15px 15px 0 0 #946fd7;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contentBlacksmith {
+  background: #ffffff;
+  box-shadow: 15px 15px 0 0 #f09265;
+  text-decoration: none;
+}
+
+.contentAlchemist {
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #6ac6a9;
+  text-decoration: none;
+}
+
+.contentRogue {
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #de657b;
+  text-decoration: none;
+}
+
+.contentBlacksmith {
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #f09265;
+  text-decoration: none;
+}
+
+.rogueText,
+.alchemistText,
+.blacksmithText,
+.witchText {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.witchDescription,
+.blacksmithDescription,
+.alchemistDescription,
+.rogueDescription {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+.alchemistContainer,
+.rogueContainer,
+.blacksmithContainer,
+.witchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 357px;
+  padding: 0;
+  margin: 0;
+}
+
+.contentWitch:hover {
+  box-shadow: 0 20px 0 0 #946fd7 inset;
+  border-radius: 40px;
+  border: 3px solid #3a2c53;
+  background: #fff;
+}
+.contentBlacksmith:hover {
+  box-shadow: 0 20px 0 0 #f09265 inset;
+  border-radius: 40px;
+  border: 3px solid #3a2c53;
+  background: #fff;
+}
+.contentAlchemist:hover {
+  box-shadow: 0 20px 0 0 #6ac6a9 inset;
+  border-radius: 40px;
+  border: 3px solid #3a2c53;
+  background: #fff;
+}
+.contentRogue:hover {
+  box-shadow: 0 20px 0 0 #de657b inset;
+  border-radius: 40px;
+  border: 3px solid #3a2c53;
+  background: #fff;
+}
+/* The Witch */
+.mainBodyWitch {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffc7d1 0%, #96e2d8 100%);
+}
+
+.mainBackWitch {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 56px 20px 20px;
+  box-sizing: border-box;
+  gap: 59px;
+}
+
+.reputationWitch {
+  display: flex;
+  width: min(1280px, 100%);
+  min-height: 133px;
+  padding: 20px 100px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  border-radius: 40px;
+  border: 3px solid #3a2c53;
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #2e1624;
+  box-sizing: border-box;
+}
+
+.reputationTextWitch {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.reputationTextContainer {
+  display: flex;
+  width: 428px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.unprovenTextWitch {
+  width: 152px;
+  color: #fd8000;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.reputationCounterWitch {
+  color: #3a2c53;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* End screen */
+.mainBodyEnd {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7f1eb 0%, #d8c7f9 100%);
+}
+
+.mainBackEnd {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 24px 16px;
+  box-sizing: border-box;
+}
+
+.endScreenCard {
+  width: min(960px, 100%);
+  padding: 48px;
+}
+
+.endScreenStatus {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.endScreenSummary {
+  color: #3a2c53;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.endScreenHeaderRow {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.endScreenHeaderTitle {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0px;
+}
+
+.endScreenHeaderLine {
+  flex: 1;
+  height: 9px;
+  border-radius: 999px;
+  background: #f7cc4a;
+}
+
+.endScreenResults {
+  display: grid;
+  gap: 50px;
+  margin-bottom: 36px;
+}
+
+.endScreenResultRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-radius: 40px;
+  border: 3px solid #3a2c53;
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #3a2c53;
+}
+
+.endScreenResultRow > span:first-child {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.resultBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #61c4a6;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.endScreenButton {
+  display: flex;
+  width: 280px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 32px 33px;
+  margin: 24px auto 0;
+  border-radius: 100px;
+  border: 3px solid #3a2c53;
+  background: #6ac6a9;
+  color: #1f3129;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 15px 15px 0 0 #3a2c53;
+}
+
+.endScreenButton:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .endScreenCard {
+    padding: 32px;
+  }
+
+  .endScreenStatus {
+    font-size: 48px;
+  }
+
+  .endScreenSummary {
+    font-size: 18px;
+  }
+
+  .endScreenResultRow {
+    padding: 18px 20px;
+    font-size: 16px;
+  }
+
+  .endScreenHeaderRow {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .endScreenCard {
+    padding: 24px;
+  }
+
+  .endScreenStatus {
+    font-size: 36px;
+  }
+
+  .endScreenSummary {
+    font-size: 16px;
+  }
+
+  .endScreenResultRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .resultBadge {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .mainBackWitch,
+  .mainBackRogue {
+    padding: 40px 16px 16px;
+  }
+
+  .reputationWitch,
+  .reputationRogue {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .reputationTextContainer {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .scaleImgWitch,
+  .scaleImgRogue {
+    padding-right: 0;
+    align-self: center;
+  }
+
+  .witchCard,
+  .rogueCard {
+    padding: 32px 24px;
+  }
+
+  .witchCardContent,
+  .rogueCardContent {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainBackWitch,
+  .mainBackRogue {
+    padding: 24px 16px 16px;
+  }
+
+  .reputationWitch,
+  .reputationRogue {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .scaleImgWitch,
+  .scaleImgRogue {
+    width: 80px;
+    height: auto;
+    padding-right: 0;
+  }
+
+  .witchCard,
+  .rogueCard {
+    padding: 28px 20px;
+  }
+
+  .witchCardTitle,
+  .rogueCardTitle {
+    font-size: 40px;
+  }
+
+  .witchCardDescription,
+  .rogueCardDescription {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainBackWitch,
+  .mainBackRogue {
+    padding: 20px 14px 14px;
+    gap: 30px;
+  }
+
+  .reputationWitch,
+  .reputationRogue {
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .reputationTextWitch,
+  .reputationTextRogue {
+    font-size: 24px;
+  }
+
+  .unprovenTextWitch,
+  .unprovenTextRogue,
+  .reputationCounterWitch,
+  .reputationCounterRogue {
+    font-size: 20px;
+  }
+
+  .scaleImgWitch,
+  .scaleImgRogue {
+    width: 70px;
+    height: 70px;
+    padding-right: 0;
+  }
+
+  .witchCard,
+  .rogueCard {
+    padding: 24px 18px;
+  }
+
+  .witchCardTitle,
+  .rogueCardTitle {
+    font-size: 34px;
+  }
+
+  .witchCardDescription,
+  .rogueCardDescription {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .visitorEncounter {
+    padding: 24px;
+  }
+
+  .visitorEncounterContent {
+    flex-direction: column;
+    min-height: auto;
+    gap: 24px;
+  }
+
+  .visitorLeft,
+  .visitorRight {
+    padding: 24px;
+  }
+
+  .visitorHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .visitorAvatar {
+    width: 120px;
+    height: auto;
+  }
+
+  .quoteText {
+    padding: 0 30px;
+  }
+
+  .goodsContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .goodsRow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    padding-bottom: 40px;
+  }
+
+  .goodsCard {
+    width: 100%;
+    min-height: 180px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .visitorLeft,
+  .visitorRight {
+    padding: 20px;
+  }
+
+  .visitorAvatar {
+    width: 100px;
+    height: auto;
+  }
+
+  .visitorName {
+    font-size: 24px;
+  }
+
+  .visitorRole,
+  .visitorStock,
+  .quoteText {
+    font-size: 16px;
+  }
+
+  .goodsRow {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .goodsCard {
+    padding: 18px;
+  }
+}
+
+.scaleImgWitch {
+  width: 99px;
+  height: 99px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  padding-right: 290px;
+}
+
+.startOverButton,
+.mainBackWitch .startOverButton,
+.mainBackRogue .startOverButton {
+  display: inline-flex;
+  height: 50px;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  border: 3px solid #3a2c53;
+  background: #f7cb59;
+  box-shadow: 5px 5px 0 0 #3a2c53;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.startOverButton:hover,
+.mainBackWitch .startOverButton:hover,
+.mainBackRogue .startOverButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 7px 7px 0 0 #3a2c53;
+  background: #ffd86f;
+}
+
+.witchCard {
+  width: min(1280px, 100%);
+  min-height: 331px;
+  border-radius: 40px;
+  border: 3px solid #2e1624;
+  background: #b9a6f8;
+  box-shadow: 15px 15px 0 0 #2e1624;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.witchCardContent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.witchCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.witchCardTitle {
+  color: #2e1624;
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.witchCardDescription {
+  color: #2e1624;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.witchCardImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.witchImage {
+  display: block;
+  width: 220px;
+  height: auto;
+  max-width: 100%;
+}
+
+.mainBodyRogue {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eaa14c 0%, #56222c 100%);
+}
+
+.mainBodyAlchemist {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fdf6eb 0%, #97938c 100%);
+}
+
+.mainBodyBlacksmith {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #c76e62 0%, #323133 100%);
+}
+
+.mainBackRogue {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 56px 20px 20px;
+  box-sizing: border-box;
+  gap: 59px;
+}
+
+.mainBackAlchemist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 56px 20px 20px;
+  box-sizing: border-box;
+  gap: 59px;
+}
+
+.mainBackBlacksmith {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 56px 20px 20px;
+  box-sizing: border-box;
+  gap: 59px;
+}
+
+.reputationRogue {
+  display: flex;
+  width: min(1280px, 100%);
+  min-height: 133px;
+  padding: 20px 100px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 3px solid #56222c;
+  background: #fdf6eb;
+  box-shadow: 15px 15px 0 0 #56222c;
+}
+
+.reputationAlchemist {
+  display: flex;
+  width: min(1280px, 100%);
+  min-height: 133px;
+  padding: 20px 100px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 3px solid #8ea7bf;
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #8ea7bf;
+}
+
+.reputationBlacksmith {
+  display: flex;
+  width: min(1280px, 100%);
+  min-height: 133px;
+  padding: 20px 100px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 3px solid #3a2c53;
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #433432;
+}
+
+.reputationTextRogue {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.reputationTextAlchemist {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.reputationTextBlacksmith {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.unprovenTextRogue {
+  width: 152px;
+  color: #fd8000;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.unprovenTextAlchemist {
+  width: 152px;
+  color: #8ea7bf;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.unprovenTextBlacksmith {
+  width: 152px;
+  color: #c76e62;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.reputationCounterRogue {
+  color: #3a2c53;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.reputationCounterAlchemist {
+  color: #3a2c53;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.reputationCounterBlacksmith {
+  color: #3a2c53;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.scaleImgRogue {
+  width: 99px;
+  height: 99px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  padding-right: 290px;
+}
+
+.scaleImgAlchemist {
+  width: 99px;
+  height: 99px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  padding-right: 180px;
+}
+
+.scaleImgBlacksmith {
+  width: 99px;
+  height: 99px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  padding-right: 180px;
+}
+
+.scaleImageRogue {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.scaleImageAlchemist {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.scaleImageBlacksmith {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rogueCard {
+  width: min(1280px, 100%);
+  min-height: 331px;
+
+  box-sizing: border-box;
+  padding: 40px 60px;
+
+  border-radius: 40px;
+  border: 3px solid #56222c;
+  background: #fdf6eb;
+  box-shadow: 15px 15px 0 0 #56222c;
+}
+
+.alchemistCard {
+  width: min(1280px, 100%);
+  min-height: 331px;
+  box-sizing: border-box;
+  padding: 40px 60px;
+
+  border-radius: 40px;
+  border: 3px solid #161e38;
+  background: #8ea7bf;
+  box-shadow: 15px 15px 0 0 #161e38;
+}
+
+.blacksmithCard {
+  width: min(1280px, 100%);
+  min-height: 331px;
+  box-sizing: border-box;
+  padding: 40px 60px;
+
+  border-radius: 40px;
+  border: 3px solid #c76e62;
+  background: #323133;
+  box-shadow: 15px 15px 0 0 #c77171;
+}
+.rogueCardContent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.alchemistCardContent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.blacksmithCardContent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.rogueCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.alchemistCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.blacksmithCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.rogueCardTitle {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.alchemistCardTitle {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.blacksmithCardTitle {
+  color: #fdf6eb;
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.rogueCardDescription {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.alchemistCardDescription {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.blacksmithCardDescription {
+  color: #fdf6eb;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.rogueCardImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.alchemistCardImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.blacksmithCardImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rogueImage {
+  display: block;
+  width: 126px;
+  height: 257px;
+  aspect-ratio: 25/51;
+}
+
+.alchemistImage {
+  width: 302px;
+  height: 302px;
+  aspect-ratio: 1/1;
+}
+
+.blacksmithImage {
+  width: 302px;
+  height: 302px;
+  aspect-ratio: 1/1;
+}
+
+.visitorCounterRogue {
+  color: #fdf6eb;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.visitorCounterAlchemist {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.visitorCounterBlacksmith {
+  color: #fdf6eb;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.visitorCounter {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.visitorEncounter {
+  width: min(1280px, 100%);
+  border-radius: 40px;
+  border: 3px solid #2e1624;
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #3a2c53;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.visitorEncounterRogue {
+  width: min(1280px, 100%);
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  border-radius: 40px;
+  border: 3px solid #2e1624;
+  background: #fdf6eb;
+  box-shadow: 15px 15px 0 0 #2f2d30;
+}
+
+.visitorEncounterAlchemist {
+  width: min(1280px, 100%);
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 3px solid #2e1624;
+  background: #fdf6eb;
+  box-shadow: 15px 15px 0 0 #2f2d30;
+}
+
+.visitorEncounterBlacksmith {
+  width: min(1280px, 100%);
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 3px solid #2e1624;
+  background: #fdf6eb;
+  box-shadow: 15px 15px 0 0 #2f2d30;
+}
+
+.visitorEncounterContent {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  min-height: 746px;
+}
+
+.visitorLeft,
+.visitorRight {
+  border-radius: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.visitorLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.visitorHeader {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.visitorAvatar {
+  width: 161px;
+  height: 178px;
+  aspect-ratio: 142/157;
+}
+
+.visitorName {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.visitorRole {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.visitorStock {
+  color: #3a2c53;
+  padding-top: 69px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 221px;
+  align-self: stretch;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.visitorTradeRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tradeItem {
+  flex: 1;
+  background: #f7cb59;
+  border: 3px solid #3a2c53;
+  border-radius: 30px;
+  padding: 14px 20px;
+  font-family: Poppins;
+  font-size: 18px;
+  color: #2e1624;
+  cursor: pointer;
+}
+
+.tradeArrow {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #2e1624;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+
+.primaryAction,
+.primaryActionRogue,
+.primaryActionAlchemist,
+.secondaryActionAlchemist,
+.primaryActionBlacksmith,
+.secondaryActionBlacksmith,
+.secondaryAction,
+.secondaryActionRogue {
+  width: 100%;
+  border-radius: 40px;
+  font-family: Poppins;
+  font-size: 20px;
+  padding: 18px 24px;
+  cursor: pointer;
+  border: 3px solid #3a2c53;
+}
+
+.primaryAction {
+  background: #61c4a6;
+  color: #2e1624;
+  box-shadow: 8px 8px 0 0 #3a2c53;
+}
+
+.primaryActionRogue {
+  border: 3px solid #2f2d30;
+  background: #6ac6a9;
+  box-shadow: 8px 8px 0 0 #2f2d30;
+}
+
+.primaryActionAlchemist {
+  border: 3px solid #2f2d30;
+  background: #6ac6a9;
+  box-shadow: 8px 8px 0 0 #2f2d30;
+}
+
+.secondaryAction {
+  background: #fff;
+  color: #2e1624;
+  box-shadow: 8px 8px 0 0 #3a2c53;
+}
+
+.secondaryActionRogue {
+  border: 3px solid #2f2d30;
+  background: #fff;
+  box-shadow: 8px 8px 0 0 #2f2d30;
+}
+
+.secondaryActionAlchemist {
+  border: 3px solid #2f2d30;
+  background: #fff;
+  box-shadow: 8px 8px 0 0 #2f2d30;
+}
+
+.primaryActionBlacksmith {
+  border: 3px solid #2f2d30;
+  background: #6ac6a9;
+  box-shadow: 8px 8px 0 0 #2f2d30;
+}
+
+.secondaryActionBlacksmith {
+  border: 3px solid #2f2d30;
+  background: #fff;
+  box-shadow: 8px 8px 0 0 #2f2d30;
+}
+
+.visitorRight {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px dashed #3a2c53;
+  background: #b89cff;
+}
+
+.visitorRightRogue {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 40px;
+  border: 3px dashed #fdf6eb;
+  background: #56222c;
+}
+
+.visitorRightAlchemist {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 40px;
+  border: 3px dashed #161e38;
+  background: #8ea7bf;
+}
+
+.visitorRightBlacksmith {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 40px;
+  border: 3px dashed #000;
+  background: #c76e62;
+}
+
+.quoteBadge.top {
+  top: 32px;
+  left: 32px;
+}
+
+.quoteBadge.bottom {
+  bottom: 32px;
+  right: 32px;
+}
+
+.quoteText {
+  color: #2e1624;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 0 60px;
+  text-align: left;
+}
+
+.quoteTextRogue {
+  color: #fdf6eb;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 0 60px;
+  text-align: left;
+}
+
+.quoteTextAlchemist {
+  color: #fdf6eb;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 0 60px;
+  text-align: left;
+}
+
+.quoteTextBlacksmith {
+  color: #2e1624;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 0 60px;
+  text-align: left;
+}
+
+.goodsContainer {
+  display: flex;
+  width: min(1280px, 100%);
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.goodsText {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.goodsTextRogue {
+  color: #fdf6eb;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.goodsTextAlchemist {
+  color: #3a2c53;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.goodsTextBlacksmith {
+  color: #fdf6eb;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.goodsBar {
+  height: 9px;
+  flex: 1 0 0;
+  border-radius: 100px;
+  background: #b9a6f8;
+}
+
+.goodsBarRogue {
+  height: 9px;
+  flex: 1 0 0;
+  border-radius: 100px;
+  background: #e16c4e;
+}
+
+.goodsBarAlchemist {
+  height: 9px;
+  flex: 1 0 0;
+  border-radius: 100px;
+  background: #f7cb59;
+}
+
+.goodsBarBlacksmith {
+  height: 9px;
+  flex: 1 0 0;
+  border-radius: 100px;
+  background: #f7cb59;
+}
+
+.goodsRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 110px;
+  padding-bottom: 100px;
+}
+
+.goodsCard {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  padding: 20px 35px 70px 35px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  border: 3px solid #000;
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #3a2c53;
+}
+
+.goodsCardRogue {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  padding: 20px 35px 70px 35px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  border: 3px solid #000;
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #433432;
+}
+
+.goodsCardAlchemist {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  padding: 20px 35px 70px 35px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  border: 3px solid #000;
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #433432;
+}
+
+.goodsCardBlacksmith {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  padding: 20px 35px 70px 35px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  border: 3px solid #000;
+  background: #fff;
+  box-shadow: 15px 15px 0 0 #433432;
+}
+
+.goodsCardTitle {
+  color: #3a2c53;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.wolfbaneSprigImg,
+.ironIngotImg,
+.harvestBreadImg,
+.lanternOilImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+}
+
+.goodsCardCount {
+  color: #946fd7;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.goodsCardCountRogue {
+  color: #c76e62;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.goodsCardCountAlchemist {
+  color: #8ea7bf;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.goodsCardCountBlacksmith {
+  color: #c76e62;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+/*End screen*/
+.mainBackEnd {
+  background: linear-gradient(180deg, #fdf6eb 0%, #e0ceff 100%);
+}
+
+/* Media Queries */
+@media (max-width: 1100px) {
+  .content {
+    gap: 20px;
+  }
+
+  .contentWitch,
+  .contentBlacksmith,
+  .contentAlchemist,
+  .contentRogue {
+    width: 48%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .introduction {
+    margin-top: 60px;
+  }
+
+  .content {
+    gap: 50px;
+    padding: 0;
+  }
+
+  .contentWitch,
+  .contentBlacksmith,
+  .contentAlchemist,
+  .contentRogue {
+    width: 30%;
+    min-height: 180px;
+  }
+
+  .alchemistContainer,
+  .rogueContainer,
+  .blacksmithContainer,
+  .witchContainer {
+    width: 100%;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.rogueText,
+.alchemistText,
+.blacksmithText,
+.witchText {
+  font-size: 20px;
+}
+
+.witchDescription,
+.blacksmithDescription,
+.alchemistDescription,
+.rogueDescription {
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .content {
+    gap: 45px;
+  }
+
+  .contentWitch,
+  .contentBlacksmith,
+  .contentAlchemist,
+  .contentRogue {
+    border-radius: 24px;
+    padding: 20px;
+    min-width: 10%;
+    min-height: 150px;
+  }
+
+  .rogueText,
+  .alchemistText,
+  .blacksmithText,
+  .witchText {
+    font-size: 20px;
+  }
+
+  .witchDescription,
+  .blacksmithDescription,
+  .alchemistDescription,
+  .rogueDescription {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .goodsContainer {
+    gap: 12px;
+  }
+
+  .goodsText {
+    font-size: 24px;
+  }
+
+  .goodsRow {
+    gap: 16px;
+    padding-bottom: 56px;
+  }
+
+  .goodsCard {
+    width: 120px;
+    height: auto;
+    padding: 16px;
+  }
+
+  .goodsCardTitle {
+    font-size: 16px;
+  }
+
+  .goodsCardCount {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .goodsContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .goodsText {
+    font-size: 20px;
+  }
+
+  .goodsRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding-bottom: 40px;
+  }
+
+  .goodsCard {
+    width: 100%;
+    min-height: 140px;
+    padding: 14px;
+  }
+
+  .goodsCardTitle {
+    font-size: 14px;
+  }
+
+  .goodsCardCount {
+    font-size: 22px;
+  }
+}
