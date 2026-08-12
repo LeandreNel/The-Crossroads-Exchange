@@ -1,4 +1,10 @@
 /* index.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .mainBody {
   min-height: 100vh;
   background: linear-gradient(180deg, #fdf6eb 0%, #e0ceff 100%);
@@ -577,7 +583,10 @@
   }
 
   .visitorLeft,
-  .visitorRight {
+  .visitorRight,
+  .visitorRightRogue,
+  .visitorRightAlchemist,
+  .visitorRightBlacksmith {
     padding: 24px;
   }
 
@@ -591,13 +600,46 @@
     height: auto;
   }
 
-  .visitorAvatarImage[src*="thomasIronhand"] {
-    width: 40px;
+  .visitorAvatarImage {
+    max-width: 100%;
+    width: auto;
     height: auto;
   }
 
-  .quoteText {
-    padding: 0 30px;
+  .quoteText,
+  .quoteTextRogue,
+  .quoteTextAlchemist,
+  .quoteTextBlacksmith {
+    padding: 0 16px;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .visitorStock {
+    width: auto;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .visitorTradeRow {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .tradeItem {
+    min-width: 0;
+    flex: 1 1 120px;
+    text-align: center;
+  }
+
+  .tradeArrow {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
   }
 
   .goodsContainer {
@@ -609,7 +651,7 @@
   .goodsRow {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
+    gap: 24px;
     padding-bottom: 40px;
   }
 
@@ -622,7 +664,10 @@
 
 @media (max-width: 480px) {
   .visitorLeft,
-  .visitorRight {
+  .visitorRight,
+  .visitorRightRogue,
+  .visitorRightAlchemist,
+  .visitorRightBlacksmith {
     padding: 20px;
   }
 
@@ -637,8 +682,12 @@
 
   .visitorRole,
   .visitorStock,
-  .quoteText {
+  .quoteText,
+  .quoteTextRogue,
+  .quoteTextAlchemist,
+  .quoteTextBlacksmith {
     font-size: 16px;
+    padding: 0 20px;
   }
 
   .goodsRow {
@@ -1481,40 +1530,19 @@
   right: 32px;
 }
 
-.quoteText {
-  color: #2e1624;
-  font-family: Poppins;
-  font-size: 20px;
-  line-height: 1.8;
-  padding: 0 60px;
-  text-align: left;
-}
-
-.quoteTextRogue {
-  color: #fdf6eb;
-  font-family: Poppins;
-  font-size: 20px;
-  line-height: 1.8;
-  padding: 0 60px;
-  text-align: left;
-}
-
-.quoteTextAlchemist {
-  color: #fdf6eb;
-  font-family: Poppins;
-  font-size: 20px;
-  line-height: 1.8;
-  padding: 0 60px;
-  text-align: left;
-}
-
+.quoteText,
+.quoteTextRogue,
+.quoteTextAlchemist,
 .quoteTextBlacksmith {
   color: #2e1624;
   font-family: Poppins;
   font-size: 20px;
   line-height: 1.8;
-  padding: 0 60px;
-  text-align: left;
+  padding: 0 30px;
+}
+
+.quoteTextBlacksmith {
+  color: #2e1624;
 }
 
 .goodsContainer {
@@ -1596,63 +1624,42 @@
 
 .goodsRow {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 80px;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 24px;
+  align-items: start;
 }
 
-.goodsCard {
+.goodsCard,
+.goodsCardRogue,
+.goodsCardAlchemist,
+.goodsCardBlacksmith {
   display: flex;
-  width: 150px;
-  height: 150px;
-  padding: 20px 35px 70px 35px;
+  width: 100%;
+  min-width: 0;
+  max-width: 260px;
+  min-height: 180px;
+  padding: 20px 24px 60px 24px;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   border-radius: 40px;
   border: 3px solid #000;
   background: #fff;
+}
+
+.goodsCard {
   box-shadow: 15px 15px 0 0 #3a2c53;
 }
 
 .goodsCardRogue {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  padding: 20px 35px 70px 35px;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  border-radius: 40px;
-  border: 3px solid #000;
-  background: #fff;
   box-shadow: 15px 15px 0 0 #433432;
 }
 
 .goodsCardAlchemist {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  padding: 20px 35px 70px 35px;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  border-radius: 40px;
-  border: 3px solid #000;
-  background: #fff;
   box-shadow: 15px 15px 0 0 #433432;
 }
 
 .goodsCardBlacksmith {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  padding: 20px 35px 70px 35px;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  border-radius: 40px;
-  border: 3px solid #000;
-  background: #fff;
   box-shadow: 15px 15px 0 0 #433432;
 }
 
@@ -1664,18 +1671,28 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  padding: 0 8px;
 }
 
-.wolfbaneSprigImg,
-.ironIngotImg,
-.harvestBreadImg,
-.lanternOilImg {
+.goodsCardImageWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 70px;
+  height: 80px;
+  padding: 10px 0;
+}
+
+.goodsCardImageWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .goodsCardImageWrapper img[src*="obsidianShard"] {
@@ -1761,6 +1778,7 @@
 @media (max-width: 1100px) {
   .content {
     gap: 20px;
+    padding: 0 16px;
   }
 
   .contentWitch,
@@ -1768,7 +1786,7 @@
   .contentAlchemist,
   .contentRogue {
     width: 48%;
-    min-width: 280px;
+    min-width: 260px;
   }
 }
 
@@ -1786,15 +1804,15 @@
   }
 
   .content {
-    gap: 50px;
-    padding: 0;
+    gap: 30px;
+    padding: 0 12px;
   }
 
   .contentWitch,
   .contentBlacksmith,
   .contentAlchemist,
   .contentRogue {
-    width: 30%;
+    width: 100%;
     min-height: 180px;
   }
 
@@ -1902,8 +1920,8 @@
 
   .goodsRow {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    grid-template-columns: 1fr;
+    gap: 16px;
     padding-bottom: 40px;
   }
 
@@ -1915,9 +1933,216 @@
 
   .goodsCardTitle {
     font-size: 14px;
+    white-space: normal;
+  }
+
+  .quoteText,
+  .quoteTextRogue,
+  .quoteTextAlchemist,
+  .quoteTextBlacksmith {
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   .goodsCardCount {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .mainBack,
+  .mainBackWitch,
+  .mainBackRogue,
+  .mainBackAlchemist,
+  .mainBackBlacksmith,
+  .mainBackEnd {
+    max-width: 100%;
+    padding: 40px 16px 16px;
+  }
+
+  .reputationWitch,
+  .reputationRogue,
+  .reputationAlchemist,
+  .reputationBlacksmith {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .reputationTextContainer {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .scaleImgWitch,
+  .scaleImgRogue,
+  .scaleImgAlchemist,
+  .scaleImgBlacksmith {
+    padding-right: 0;
+    align-self: center;
+  }
+
+  .witchCard,
+  .rogueCard,
+  .alchemistCard,
+  .blacksmithCard {
+    padding: 32px 24px;
+  }
+
+  .witchCardContent,
+  .rogueCardContent,
+  .alchemistCardContent,
+  .blacksmithCardContent {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainBack,
+  .mainBackWitch,
+  .mainBackRogue,
+  .mainBackAlchemist,
+  .mainBackBlacksmith,
+  .mainBackEnd {
+    padding: 24px 16px 16px;
+  }
+
+  .visitorEncounter,
+  .visitorEncounterRogue,
+  .visitorEncounterAlchemist,
+  .visitorEncounterBlacksmith {
+    padding: 24px;
+  }
+
+  .visitorEncounterContent {
+    flex-direction: column;
+    min-height: auto;
+    gap: 24px;
+  }
+
+  .visitorLeft,
+  .visitorRight,
+  .visitorRightRogue,
+  .visitorRightAlchemist,
+  .visitorRightBlacksmith {
+    padding: 24px;
+  }
+
+  .visitorAvatar {
+    width: 120px;
+    height: auto;
+  }
+
+  .visitorTradeRow {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .tradeItem {
+    min-width: 0;
+    flex: 1 1 120px;
+  }
+
+  .tradeArrow {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+
+  .visitorStock {
+    width: auto;
+    padding-top: 32px;
+  }
+
+  .goodsRow {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .goodsCard {
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainBack,
+  .mainBackWitch,
+  .mainBackRogue,
+  .mainBackAlchemist,
+  .mainBackBlacksmith,
+  .mainBackEnd {
+    padding: 20px 14px 14px;
+    gap: 30px;
+  }
+
+  .contentWitch,
+  .contentBlacksmith,
+  .contentAlchemist,
+  .contentRogue {
+    width: 100%;
+    min-height: 150px;
+    padding: 20px;
+  }
+
+  .visitorAvatar {
+    width: 100px;
+    height: auto;
+  }
+
+  .visitorStock {
+    width: auto;
+    padding-top: 20px;
+    font-size: 16px;
+  }
+
+  .visitorTradeRow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .tradeItem {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tradeArrow {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    border-radius: 18px;
+    align-self: center;
+  }
+
+  .goodsRow {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .goodsCard {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .quoteText,
+  .quoteTextRogue,
+  .quoteTextAlchemist,
+  .quoteTextBlacksmith {
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .quoteText,
+  .quoteTextRogue,
+  .quoteTextAlchemist,
+  .quoteTextBlacksmith {
+    padding: 0 12px;
   }
 }
