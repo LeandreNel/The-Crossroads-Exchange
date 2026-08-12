@@ -67,7 +67,6 @@ $characters = [
                     </div>
                 </a>
             <?php endforeach; ?>
-        </div>        <div class="tempEndButtonWrapper">
-            <a href="<?php echo $basePath; ?>endScreen.php" class="tempEndButton">Go to Ending</a>
-        </div>    </div>
+        </div>
+    </div>
 </body>

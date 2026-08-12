@@ -13,13 +13,13 @@ $basePath = rtrim($basePath, '/') . '/';
     <link rel="stylesheet" href="<?php echo $basePath; ?>index.css">
      <link rel="stylesheet" href="https://use.typekit.net/tns8rhh.css">
 </head>
-<body class="mainBodyBlacksmith">
+<body class="mainBodyBlacksmith" data-character="blacksmith">
     <div class="mainBackBlacksmith">
         <div class="reputationBlacksmith">
             <div class="reputationTextBlacksmith">The Blacksmith</div>
             <div class="reputationTextContainer">
                 <div class="unprovenTextBlacksmith">Unproven</div>
-                <div class="reputationCounterBlacksmith">Reputation(+0)</div>
+                <div class="reputationCounterBlacksmith reputationCounter">Reputation(+0)</div>
             </div>
             <div class="scaleImgBlacksmith">
                 <img src="<?php echo $basePath; ?>img/scaleBlacksmith.png" alt="Scale Image" class="scaleImageBlacksmith">
@@ -38,7 +38,7 @@ $basePath = rtrim($basePath, '/') . '/';
                 
             </div>
         </div>
-        <div class="visitorCounterBlacksmith">Visitors 1 Of 8</div>
+        <div class="visitorCounterBlacksmith visitorCounter">Visitors 1 Of 8</div>
         <div class="visitorEncounterBlacksmith">
             <div class="visitorEncounterContent">
                 <div class="visitorLeft">
@@ -63,13 +63,14 @@ $basePath = rtrim($basePath, '/') . '/';
                         <button class="tradeItem">1 Healing Potion</button>
                     </div>
 
-                    <button class="primaryActionBlacksmith">Make the trade</button>
-                    <button class="secondaryActionBlacksmith">Turn them away</button>
+                    <button class="primaryActionBlacksmith primaryAction">Make the trade</button>
+                    <button class="secondaryActionBlacksmith secondaryAction">Turn them away</button>
+                    <div class="gameMessage"></div>
                 </div>
 
                 <div class="visitorRightBlacksmith">
                     <div class="quoteBadge top"></div>
-                    <div class="quoteTextBlacksmith">“My granddaughter's fever won't break, and the her bwoman two villages over wants coin I don't have. A sprig of wolfsbane, prepared right, is all a poultice like this one needs. I'll trade you one I've already made — it's done its work on worse.”</div>
+                    <div class="quoteTextBlacksmith quoteText">“My granddaughter's fever won't break, and the her bwoman two villages over wants coin I don't have. A sprig of wolfsbane, prepared right, is all a poultice like this one needs. I'll trade you one I've already made — it's done its work on worse.”</div>
                     <div class="quoteBadge bottom"></div>
                 </div>
             </div>
@@ -79,31 +80,32 @@ $basePath = rtrim($basePath, '/') . '/';
             <div class="goodsBarBlacksmith"></div>
         </div>
         <div class="goodsRow">
-            <div class="goodsCardBlacksmith">
+            <div class="goodsCardBlacksmith goodsCard">
                 <div class="goodsCardTitle">Wolfbane Sprig</div>
-                <div class="goodsCardCountBlacksmith">2</div>
+                <div class="goodsCardCountBlacksmith goodsCardCount">2</div>
                 <div class="wolfbaneSprigImg"><img src="<?php echo $basePath; ?>img/wolfbaneSprig.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
-            <div class="goodsCardBlacksmith">
+            <div class="goodsCardBlacksmith goodsCard">
                 <div class="goodsCardTitle">Iron Ingot</div>
-                <div class="goodsCardCountBlacksmith">2</div>
+                <div class="goodsCardCountBlacksmith goodsCardCount">2</div>
                 <div class="ironIngotImg"><img src="<?php echo $basePath; ?>img/ironIngot.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
-            <div class="goodsCardBlacksmith">
+            <div class="goodsCardBlacksmith goodsCard">
                 <div class="goodsCardTitle">Harvest Bread</div>
-                <div class="goodsCardCountBlacksmith">2</div>
+                <div class="goodsCardCountBlacksmith goodsCardCount">2</div>
                 <div class="harvestBreadImg"><img src="<?php echo $basePath; ?>img/harvestBread.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
-            <div class="goodsCardBlacksmith">
+            <div class="goodsCardBlacksmith goodsCard">
                 <div class="goodsCardTitle">Lantern Oil</div>
-                <div class="goodsCardCountBlacksmith">2</div>
+                <div class="goodsCardCountBlacksmith goodsCardCount">2</div>
                 <div class="lanternOilImg"><img src="<?php echo $basePath; ?>img/lanternOil.png" alt="Goods Image" class="goodsImage"></div>
                 
             </div>
         </div>
     </div>
+    <script src="<?php echo $basePath; ?>game.js"></script>
 </body>
 </html>

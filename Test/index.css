@@ -370,6 +370,10 @@
   font-weight: 700;
 }
 
+.resultBadge.declined {
+  background: #7c7c7c;
+}
+
 .endScreenButton {
   display: flex;
   width: 280px;
@@ -584,6 +588,11 @@
 
   .visitorAvatar {
     width: 120px;
+    height: auto;
+  }
+
+  .visitorAvatarImage[src*="thomasIronhand"] {
+    width: 40px;
     height: auto;
   }
 
@@ -1175,7 +1184,6 @@
 }
 
 .visitorCounter {
-  color: #3a2c53;
   font-family: Poppins;
   font-size: 30px;
   font-style: normal;
@@ -1256,6 +1264,41 @@
   width: 161px;
   height: 178px;
   aspect-ratio: 142/157;
+}
+
+.visitorAvatarImage[src*="thomasIronhand"] {
+  width: 80px;
+  height: auto;
+}
+
+.visitorAvatarImage[src*="grixThePawnbroker"] {
+  width: 180px;
+  height: auto;
+}
+
+.visitorAvatarImage[src*="sisterMarrow"] {
+  width: 170px;
+  height: auto;
+}
+
+.visitorAvatarImage[src*="brotherAldous"] {
+  width: 170px;
+  height: auto;
+}
+
+.visitorAvatarImage[src*="theWidowInGrey"] {
+  width: 120px;
+  height: auto;
+}
+
+.visitorAvatarImage[src*="theTitheCollector"] {
+  width: 120px;
+  height: auto;
+}
+
+.visitorAvatarImage[src*="yennaTheWayfinder"] {
+  width: 120px;
+  height: auto;
 }
 
 .visitorName {
@@ -1552,10 +1595,9 @@
 }
 
 .goodsRow {
-  display: inline-flex;
-  align-items: center;
-  gap: 110px;
-  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 80px;
 }
 
 .goodsCard {
@@ -1634,6 +1676,41 @@
   justify-content: center;
   width: 100%;
   height: 70px;
+}
+
+.goodsCardImageWrapper img[src*="obsidianShard"] {
+  width: 90px;
+  height: auto;
+}
+
+.goodsCardImageWrapper img[src*="moonStone"] {
+  width: 100px;
+  height: auto;
+}
+
+.goodsCardImageWrapper img[src*="healingPoultrice"] {
+  width: 100px;
+  height: auto;
+}
+
+.goodsCardImageWrapper img[src*="blessedCandle"] {
+  width: 65px;
+  height: auto;
+}
+
+.goodsCardImageWrapper img[src*="graveDust"] {
+  width: 80px;
+  height: auto;
+}
+
+.goodsCardImageWrapper img[src*="stolenRing"] {
+  width: 80px;
+  height: auto;
+}
+
+.goodsCardImageWrapper img[src*="cursedCoin"] {
+  width: 80px;
+  height: auto;
 }
 
 .goodsCardCount {

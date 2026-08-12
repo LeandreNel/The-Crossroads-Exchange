@@ -13,13 +13,13 @@ $basePath = rtrim($basePath, '/') . '/';
     <link rel="stylesheet" href="<?php echo $basePath; ?>index.css">
      <link rel="stylesheet" href="https://use.typekit.net/tns8rhh.css">
 </head>
-<body class="mainBodyWitch">
+<body class="mainBodyWitch" data-character="witch">
     <div class="mainBackWitch">
         <div class="reputationWitch">
             <div class="reputationTextWitch">The Witch</div>
             <div class="reputationTextContainer">
                 <div class="unprovenTextWitch">Unproven</div>
-                <div class="reputationCounterWitch">Reputation(+0)</div>
+                <div class="reputationCounterWitch reputationCounter">Reputation(+0)</div>
             </div>
             <div class="scaleImgWitch">
                 <img src="<?php echo $basePath; ?>img/Scale.png" alt="Scale Image" class="scaleImageWitch">
@@ -65,6 +65,7 @@ $basePath = rtrim($basePath, '/') . '/';
 
                     <button class="primaryAction">Make the trade</button>
                     <button class="secondaryAction">Turn them away</button>
+                    <div class="gameMessage"></div>
                 </div>
 
                 <div class="visitorRight">
@@ -105,5 +106,6 @@ $basePath = rtrim($basePath, '/') . '/';
             </div>
         </div>
     </div>
+    <script src="<?php echo $basePath; ?>game.js"></script>
 </body>
 </html>

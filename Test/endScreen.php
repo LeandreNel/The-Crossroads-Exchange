@@ -13,7 +13,7 @@ $basePath = rtrim($basePath, '/') . '/';
     <link rel="stylesheet" href="<?php echo $basePath; ?>index.css">
     <link rel="stylesheet" href="https://use.typekit.net/tns8rhh.css">
 </head>
-<body class="mainBodyEnd">
+<body class="mainBodyEnd" data-character="end">
     <div class="mainBackEnd">
         <div class="endScreenCard">
             <p class="endScreenStatus">Honest (+7)</p>
@@ -62,5 +62,6 @@ $basePath = rtrim($basePath, '/') . '/';
             <a href="<?php echo $basePath; ?>index.php" class="endScreenButton">Choose again</a>
         </div>
     </div>
+    <script src="<?php echo $basePath; ?>game.js"></script>
 </body>
 </html>
