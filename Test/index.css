@@ -41,7 +41,7 @@
   justify-content: center;
   gap: 30px;
   width: 100%;
-  max-width: 1127px;
+  /* max-width: 1127px; */
   margin: 40px auto 0;
   padding: 0 20px;
   flex-wrap: wrap;
@@ -1530,8 +1530,15 @@
   right: 32px;
 }
 
+.quoteTextRogue {
+  color: #fdf6eb !important;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 0 30px;
+}
+
 .quoteText,
-.quoteTextRogue,
 .quoteTextAlchemist,
 .quoteTextBlacksmith {
   color: #2e1624;
